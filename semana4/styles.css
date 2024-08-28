@@ -1,0 +1,23 @@
+
+header{
+    background-color: red;
+}
+header p{
+    color: white;
+    font-size: 40px;
+}
+
+/*body*/
+body{
+    font-family: 'Verdana';
+}
+
+body p{
+    
+    font-size: 40px;
+}
+
+section{
+    border: 1px solid #000;
+    height: 200px;
+}	

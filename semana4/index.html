@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+<html>
+    <html lang="es"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <style>
+            /* Estilos Generales */
+            * {
+                scroll-behavior: smooth;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                scroll-behavior: smooth;
+            }
+    
+            header {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                color: white;
+                padding: 10px 0;
+                z-index: 1000;
+            }
+    
+            header nav {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+    
+            header nav a {
+                color: white;
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+    
+            header nav a:hover {
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 5px;
+            }
+    
+            section {
+                padding: 100px 20px;
+            }
+    
+            /* Sección de Inicio */
+            #home {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                background: url('background.jpg') no-repeat center center/cover;
+                color: white;
+                text-align: center;
+            }
+    
+            #home h1 {
+                font-size: 3em;
+                margin-bottom: 10px;
+            }
+    
+            #home p {
+                font-size: 1.2em;
+                margin-bottom: 20px;
+            }
+    
+            .cta-button {
+                background: #007BFF;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+    
+            .cta-button:hover {
+                background: #0056b3;
+            }
+    
+            /* Sección de Servicios */
+            #services {
+                background: #f4f4f4;
+                text-align: center;
+            }
+    
+            #services h2 {
+                margin-bottom: 20px;
+            }
+    
+            .services-grid {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+    
+            .service-item {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                max-width: 300px;
+                text-align: center;
+            }
+    
+            .service-item img {
+                max-width: 100px;
+                margin-bottom: 10px;
+            }
+    
+            .service-item h3 {
+                margin-bottom: 10px;
+                font-size: 1.5em;
+            }
+    
+            /* Sección Sobre Nosotros */
+            #about {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+    
+            #about img {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+    
+            #about div {
+                max-width: 600px;
+            }
+    
+            #about h2 {
+                margin-bottom: 20px;
+            }
+    
+            /* Sección de Testimonios */
+            #testimonials {
+                background: #f4f4f4;
+                text-align: center;
+            }
+    
+            #testimonials h2 {
+                margin-bottom: 20px;
+            }
+    
+            .testimonials-carousel {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+    
+            .testimonial-item {
+                background: white;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                max-width: 300px;
+            }
+    
+            .testimonial-item p {
+                margin-bottom: 10px;
+            }
+    
+            /* Sección de Contacto */
+            #contact {
+                text-align: center;
+            }
+    
+            #contact form {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+    
+            #contact input, #contact textarea {
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                font-size: 1em;
+                width: 100%;
+            }
+    
+            #contact button {
+                padding: 10px;
+                border: none;
+                background: #007BFF;
+                color: white;
+                font-size: 1em;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            #contact button:hover {
+                background: #0056b3;
+            }
+    
+            .contact-info {
+                margin-top: 20px;
+                font-size: 1.2em;
+            }
+    
+            /* Responsividad */
+            @media (max-width: 768px) {
+                header nav {
+                    flex-direction: column;
+                }
+    
+                #about {
+                    flex-direction: column;
+                    text-align: center;
+                }
+    
+                .service-item, .testimonial-item {
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <header>
+            <nav>
+                <a href="#home">Inicio</a>
+                <a href="#services">Servicios</a>
+                <a href="#about">Sobre Nosotros</a>
+                <a href="#testimonials">Testimonios</a>
+                <a href="#contact">Contacto</a>
+            </nav>
+        </header>
+    
+        <section id="home">
+            <div class="hero">
+                <h1>Bienvenidos a [Nombre de la Empresa]</h1>
+                <p>Tu socio en [Sector de la empresa]</p>
+                <a href="#services" class="cta-button">Ver Servicios</a>
+            </div>
+        </section>
+    
+        <section id="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <img src="icon1.png" alt="Servicio 1">
+                    <h3>Servicio 1</h3>
+                    <p>Descripción breve del servicio 1.</p>
+                </div>
+                <div class="service-item">
+                    <img src="icon2.png" alt="Servicio 2">
+                    <h3>Servicio 2</h3>
+                    <p>Descripción breve del servicio 2.</p>
+                </div>
+                <div class="service-item">
+                    <img src="icon3.png" alt="Servicio 3">
+                    <h3>Servicio 3</h3>
+                    <p>Descripción breve del servicio 3.</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="about">
+            <h2>Sobre Nosotros</h2>
+            <div>
+                <img src="about-image.jpg" alt="Sobre Nosotros">
+                <div>
+                    <p>[Breve historia y misión de la empresa]</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="testimonials">
+            <h2>Testimonios</h2>
+            <div class="testimonials-carousel">
+                <div class="testimonial-item">
+                    <p>"Excelente servicio, 100% recomendado!"</p>
+                    <p>- Cliente Satisfecho</p>
+                </div>
+                <div class="testimonial-item">
+                    <p>"Muy profesional y eficiente!"</p>
+                    <p>- Cliente Feliz</p>
+                </div>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="/send-message" method="post">
+                <input type="text" name="name" placeholder="Tu Nombre" required="">
+                <input type="email" name="email" placeholder="Tu Email" required="">
+                <textarea name="message" placeholder="Tu Mensaje" required=""></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="contact-info">
+                <p><strong>Dirección:</strong> 123 Calle Principal, Ciudad, País</p>
+                <p><strong>Teléfono:</strong> +1 (123) 456-7890</p>
+                <p><strong>Email:</strong> contacto@empresa.com</p>
+            </div>
+        </section>
+    
+    
+    
+    
+    </body></html>
+    
+
+</html>
